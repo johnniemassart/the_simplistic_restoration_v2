@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <title>the simplistic restoration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="static-container">
+            <svg>
+                <filter id="noise">
+                    <feTurbulence id="turbulence">
+                        <animate attributeName="baseFrequency" dur="0s" values="0.9 0.9; 0.8 0.8; 0.9 0.9" repeatCount="indefinite"></animate>
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" scale="60"></feDisplacementMap>
+                </filter>
+            </svg>
+        </div>
+        <a class="tsr" href="index.html">the simplistic restoration</a>
+        <div class="home-container">
+            <nav class="nav-wrapper">
+                <li>
+                    <a class="concepts" href="concepts.html">concepts</a>
+                </li>
+                <span class="border"> | </span>
+                <li>
+                    <a class="contact" href="mailto:johnniemassart@gmail.com">contact</a>
+                </li>
+            </nav>
+            <div class="home-content">
+                <div class="home-content-img">
+                    <div class="home-content-img-container">
+                        <img class="img-iterate" src="./images/tsr original home.png" alt="tsr original homepage">
+                        <img class="img-iterate" src="./images/johnnie x home.png" alt="johnnie home">
+                        <img class="img-iterate" src="./images/johnnie x catalog.png" alt="johnnie catalog">
+                    </div>
+                </div>
+                <div class="home-content-text">
+                    <p>a digital design studio with an emphasis on<br>{simplicity, imperfection}.</p>
+                </div>
+            </div>
+            <div class="home-bottom">
+                <div class="time"></div>
+            </div>
+        </div>
+    </div>
+    <div class="cursor"></div>
+</body>
+</html>

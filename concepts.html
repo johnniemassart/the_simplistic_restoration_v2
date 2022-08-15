@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <title>the simplistic restoration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="concepts.js" defer></script>
+</head>
+<body>
+    <div class="concepts-container">
+        <div class="static-container">
+            <svg>
+                <filter id="noise">
+                    <feTurbulence id="turbulence">
+                        <animate attributeName="baseFrequency" dur="0s" values="0.9 0.9; 0.8 0.8; 0.9 0.9" repeatCount="indefinite"></animate>
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" scale="60"></feDisplacementMap>
+                </filter>
+            </svg>
+        </div>
+        <a class="tsr" href="index.html">the simplistic restoration</a>
+        <div class="concepts-inner-container">
+            <nav class="nav-wrapper">
+                <li>
+                    <a class="concepts-concepts" href="concepts.html">concepts</a>
+                </li>
+                <span class="border"> | </span>
+                <li>
+                    <a class="contact" href="mailto:johnniemassart@gmail.com">contact</a>
+                </li>
+            </nav>
+            <div class="concepts-content">
+                <div class="collapsible">
+                    <button type="button" class="concepts-button">JOHNNIE.MASSART</button>
+                    <div class="concepts-button-content">
+                        <a class="published" href="https://www.johnniemassart.com" target="_blank">published</a>
+                        <p>// 08.07.2022<br>digital outlet for johnnie to showcase catalog.</p>
+                        <!-- <p>objective // design and develop a digital outlet for johnnie to showcase catalog.</p> -->
+                        <img src="./images/johnnie x home.png" alt="johnnie home">
+                        <img src="./images/johnnie x catalog.png" alt="johnnie x catalog">
+                    </div>
+                </div>
+            </div>
+            <div class="home-bottom">
+                <div class="time"></div>
+            </div>
+        </div>
+    </div>
+    <div class="cursor"></div>
+</body>
+</html>
