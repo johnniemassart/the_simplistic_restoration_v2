@@ -23,7 +23,8 @@ body {
   background-color: var(--bgColor);
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+/*   justify-content: flex-end; */
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -66,8 +67,10 @@ body {
 }
 
 .home-container {
-  height: 98%;
-  width: 98%;
+/*   height: 98%;
+  width: 98%; */
+  height: 100%;
+  width: 100%;
   background-color: var(--bgColor);
   z-index: 1;
   display: grid;
