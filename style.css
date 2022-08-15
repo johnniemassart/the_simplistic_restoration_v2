@@ -4,6 +4,7 @@
   box-sizing: border-box;
   cursor: none;
   overscroll-behavior: none;
+  font-family: serif;
 }
 
 :root {
