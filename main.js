@@ -20,7 +20,7 @@ window.addEventListener('load', () => {
         const seconds = date.getSeconds().toString().padStart(2,0);
         const amOrPm = date.getHours() < 12 ? "AM" : "PM";
 
-        return `${hours.toString().padStart(2,0)}:${minutes}:${seconds} ${amOrPm} ${'// CDT'}`;
+        return `${hours.toString().padStart(2,0)}:${minutes}:${seconds} ${amOrPm} ${'// JM'}`;
 
     }
 
